@@ -1,38 +1,49 @@
-# CI/CD Tools and Practices Final Project Template
 
-This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
+# CI/CD Final Project ⚙️
 
-## Usage
+This project was created as part of the **"CI/CD Tools and Practices"** course in the IBM DevOps and Software Engineering Professional Certificate.
 
-This repository is to be used as a template to create your own repository in your own GitHub account. No need to Fork it as it has been set up as a Template. This will avoid confusion when making Pull Requests in the future.
+## 🚧 Objective
+To implement a working **CI/CD pipeline** using industry-standard tools. The project automates the build, test, and deploy stages using GitHub Actions and Docker.
 
-From the GitHub **Code** page, press the green **Use this template** button to create your own repository from this template.
+## 🧰 Tech Stack
+- GitHub Actions (CI/CD workflow)
+- Docker
+- Python 3.9
+- Makefile
+- Bash scripting
 
-Name your repo: `ci-cd-final-project`.
+## 🔁 Pipeline Overview
+The pipeline performs:
+- Code linting and style checks
+- Unit testing
+- Build and push of Docker images
+- Deployment simulation
 
-## Setup
+CI/CD logic is configured in `.github/workflows/ci.yml`.
 
-After entering the lab environment you will need to run the `setup.sh` script in the `./bin` folder to install the prerequisite software.
+## 🚀 Getting Started
+```
+git clone https://github.com/StivenHenao/ci-cd-final-project.git
+cd ci-cd-final-project
+```
 
-```bash
+# Setup environment
+```
 bash bin/setup.sh
 ```
-
-Then you must exit the shell and start a new one for the Python virtual environment to be activated.
-
-```bash
-exit
+## 📁 Project Layout
 ```
-
-## Tasks
-
-
-## License
-
-Licensed under the Apache License. See [LICENSE](/LICENSE)
+├── bin/
+│   └── setup.sh
+├── service/
+├── .github/workflows/
+│   └── ci.yml
+├── Dockerfile
+├── Makefile
+```
+## 📄 License
+Apache 2.0
 
 ## Author
-
 Skills Network
-
-## <h3 align="center"> © IBM Corporation 2023. All rights reserved. <h3/>
